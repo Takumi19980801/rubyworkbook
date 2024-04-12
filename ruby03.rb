@@ -6,21 +6,20 @@ class Article
     @content = content
   end
 
-  def author
-    @author
+  def au
+    puts "著者: #{@author}"
   end
 
-  def title
-    @title
+  def ti
+    puts "タイトル: #{@title}"
   end
 
-  def content
-    @content
+  def co
+    puts "本文: #{@content}"
   end
-
 end
 
-article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
-puts "著者: #{article.author}"
-puts "タイトル: #{article.title}"
-puts "本文: #{article.content}"
+book = Article.new( "阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+book.au
+book.ti
+book.co
